@@ -1,19 +1,19 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n=20;
+    int n;
+    cin>>n;
     int a=1;
-    int b=2;
+    int b=a+1;
     int c=b+1;
 
-    while(c<=n){
-        if(a*a+b*b==c*c){
-            cout<<"a"<<" "<<"b"<<" "<<"c";
+    for(int a=1;a<=n;a++){
+        for(int b=a+1;b<=n;b++){
+            for(int c=b+1;c<=n;c++){
+                if(a*a+b*b==c*c){
+                    cout<<a<<" "<<b<<" "<<c<<endl;
+                }
+            }
         }
-        a++;
-        b++;
-        c++;
     }
-
-
 }
