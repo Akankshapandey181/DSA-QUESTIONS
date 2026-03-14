@@ -7,9 +7,9 @@ int main(){
     for(char c:s){
         freq[c-'a']++;
     }
-    for(char c:s){
-        if(freq[c-'a']==1){
-            cout<<c;
+    for(int i=0;i<s.size();i++){
+        if(freq[s[i]-'a']==1){
+            cout<<i;
             return 0;
         }
     }
