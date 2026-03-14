@@ -7,14 +7,14 @@ using namespace std;
         int j=s.size()-1;
         while(i<j){
             if(s[i]!=s[j]){
-                cout<<"Not palindrome";
+                cout<<"false";
                 return 0;
             }else{
                 i++;
                 j--;
             }
         }
-        cout<<"palindrome";
+        cout<<"true";
     }
 
 
